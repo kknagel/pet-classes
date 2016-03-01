@@ -3,7 +3,7 @@ package edu.htc.pets;
 /**
  * Created by marymosman on 2/1/16.
  */
-public class Dog extends Pet{
+public class Dog extends Pet implements Audible{
     private String trickName;
 
 
@@ -37,6 +37,10 @@ public class Dog extends Pet{
 
     public String toString() {
         return "Name: " + getName();
+    }
+
+    public void makeSound(){
+        System.out.println("Dog: Woof");
     }
 
 }

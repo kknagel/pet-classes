@@ -8,7 +8,7 @@ package edu.htc.pets;
  * Cats have a name and age.
  * There is also a function to calculate their human age.
  */
-public class Cat extends Pet{
+public class Cat extends Pet implements Audible{
 
     public Cat(String name){
         super(name);
@@ -33,6 +33,11 @@ public class Cat extends Pet{
 
     public String toString() {
         return "Cat: " + getName();
+    }
+
+    public void makeSound(){
+        System.out.println("Cat: Meow");
+
     }
 
 }
